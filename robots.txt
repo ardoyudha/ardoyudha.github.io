@@ -1,0 +1,6 @@
+# robots.txt for https://ardoyudha.my.id/
+User-agent: *
+Allow: /
+
+# Sitemap URL for Google Search Console & Search Crawlers
+Sitemap: https://ardoyudha.my.id/sitemap.xml
