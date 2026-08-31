@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ardo Yudha - System Engineer & IT Infrastructure Specialist</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          },
+          colors: {
+            onyx: '#1e1e1f',
+            eerie: '#121212',
+            jet: '#252526',
+            gold: '#ffb703',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #121212;
+      color: #fafafa;
+    }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .custom-scroll::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    .custom-scroll::-webkit-scrollbar-track {
+      background: #1e1e1f;
+      border-radius: 4px;
+    }
+    .custom-scroll::-webkit-scrollbar-thumb {
+      background: #fbbf24;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+
+<body class="min-h-screen bg-[#121212] text-slate-100 antialiased p-3 sm:p-6 md:p-8 lg:p-10 flex flex-col justify-between selection:bg-amber-500 selection:text-neutral-950">
+
+  <main class="max-w-5xl mx-auto w-full bg-[#1e1e1f] border border-neutral-800 rounded-2xl sm:rounded-3xl shadow-2xl overflow-hidden mb-8">
+    
+    <!-- TOP HEADER BANNER -->
+    <header class="bg-gradient-to-b md:bg-gradient-to-r from-amber-500/20 via-orange-500/15 to-yellow-500/10 border-b border-neutral-800 p-5 sm:p-8 md:p-10 flex flex-col md:flex-row items-center justify-between text-center md:text-left gap-5 sm:gap-6">
+      
+      <!-- Avatar with real photo -->
+      <div class="relative w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 rounded-2xl sm:rounded-3xl bg-gradient-to-br from-amber-400 to-amber-600 p-1 shadow-2xl shrink-0 overflow-hidden mx-auto md:mx-0 ring-4 ring-neutral-800/80">
+        <img src="./assets/images/my-avatar.png" alt="Ardo Yudha" class="w-full h-full object-cover rounded-xl sm:rounded-2xl">
+        <span class="absolute bottom-1.5 right-1.5 sm:bottom-2 sm:right-2 w-3.5 h-3.5 sm:w-4 sm:h-4 bg-emerald-500 border-2 border-neutral-900 rounded-full animate-pulse" title="Available / Ready for Opportunities"></span>
+      </div>
+
+      <!-- Identity & Role -->
+      <div class="flex-1 space-y-2.5 sm:space-y-3 text-center md:text-left">
+        <div class="inline-flex items-center gap-2 px-3 py-1 sm:px-3.5 sm:py-1.5 rounded-full text-[11px] sm:text-xs font-semibold bg-amber-500/20 text-amber-400 border border-amber-500/30 shadow-sm max-w-full">
+          <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse shrink-0"></span>
+          <span class="truncate sm:whitespace-normal">System Engineer | IT Infrastructure & Storage Specialist</span>
+        </div>
+
+        <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-white">Ardo Yudha</h1>
+        
+        <div class="text-xs sm:text-sm text-neutral-300 flex flex-wrap justify-center md:justify-start items-center gap-3 sm:gap-4 pt-0.5">
+          <span class="inline-flex items-center gap-1.5">
+            <ion-icon name="location-outline" class="text-amber-400 text-base"></ion-icon>
+            Depok, West Java, Indonesia
+          </span>
+          <a href="https://linkedin.com/in/ardoyudha/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-amber-400 hover:text-amber-300 underline decoration-amber-400/50 hover:decoration-amber-300 transition font-medium" title="Open LinkedIn Profile">
+            <ion-icon name="logo-linkedin" class="text-amber-400 text-base"></ion-icon>
+            linkedin.com/in/ardoyudha/
+          </a>
+        </div>
+      </div>
+
+      <!-- Action CTA -->
+      <div class="flex justify-center md:justify-end shrink-0 w-full sm:w-auto">
+        <a href="https://linkedin.com/in/ardoyudha/" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto px-6 py-2.5 bg-amber-500 hover:bg-amber-400 text-neutral-950 font-bold rounded-xl sm:rounded-2xl text-sm transition shadow-lg hover:shadow-amber-500/25 active:scale-95 flex items-center justify-center gap-2">
+          <ion-icon name="logo-linkedin" class="text-base"></ion-icon>
+          <span>Connect on LinkedIn</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- NAVIGATION TABS -->
+    <nav class="flex border-b border-neutral-800 bg-[#252526] overflow-x-auto no-scrollbar justify-start sm:justify-center px-3 sm:px-4 gap-1 sm:gap-4 text-xs sm:text-sm font-medium">
+      <button onclick="switchTab('about')" id="tab-btn-about" class="tab-btn active px-3.5 sm:px-5 py-3.5 sm:py-4 border-b-2 border-amber-400 text-amber-400 font-semibold flex items-center gap-1.5 sm:gap-2 whitespace-nowrap transition">
+        <ion-icon name="person-outline" class="text-base"></ion-icon> About Me
+      </button>
+      <button onclick="switchTab('resume')" id="tab-btn-resume" class="tab-btn px-3.5 sm:px-5 py-3.5 sm:py-4 border-b-2 border-transparent text-neutral-400 hover:text-white flex items-center gap-1.5 sm:gap-2 whitespace-nowrap transition">
+        <ion-icon name="document-text-outline" class="text-base"></ion-icon> Resume & Certifications
+      </button>
+      <button onclick="switchTab('portfolio')" id="tab-btn-portfolio" class="tab-btn px-3.5 sm:px-5 py-3.5 sm:py-4 border-b-2 border-transparent text-neutral-400 hover:text-white flex items-center gap-1.5 sm:gap-2 whitespace-nowrap transition">
+        <ion-icon name="grid-outline" class="text-base"></ion-icon> Portfolio
+      </button>
+      <button onclick="switchTab('contact')" id="tab-btn-contact" class="tab-btn px-3.5 sm:px-5 py-3.5 sm:py-4 border-b-2 border-transparent text-neutral-400 hover:text-white flex items-center gap-1.5 sm:gap-2 whitespace-nowrap transition">
+        <ion-icon name="paper-plane-outline" class="text-base"></ion-icon> Contact
+      </button>
+    </nav>
+
+    <!-- MAIN BODY CONTENTS -->
+    <div class="p-5 sm:p-8 md:p-10 space-y-8">
+
+      <!-- ================= TAB: ABOUT ================= -->
+      <section id="tab-about" class="tab-pane space-y-8">
+        
+        <!-- Summary Header -->
+        <div class="space-y-3 sm:space-y-4 max-w-3xl mx-auto text-center">
+          <h2 class="text-xl sm:text-2xl font-bold text-white tracking-tight">Professional Summary</h2>
+          <div class="w-12 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mx-auto rounded-full"></div>
+          <p class="text-xs sm:text-sm md:text-base leading-relaxed text-neutral-300">
+            Dedicated <strong class="text-white">System Engineer</strong> with over 5 years of experience in implementing and maintaining enterprise-level IT infrastructure, specializing in <strong class="text-amber-400">Data Backup & Recovery</strong>, <strong class="text-amber-400">Server Hardware</strong>, and <strong class="text-amber-400">Enterprise Storage Solutions</strong>.
+          </p>
+          <p class="text-xs sm:text-sm md:text-base leading-relaxed text-neutral-300">
+            Proven track record of managing large-scale enterprise deployments across <strong class="text-white">Data Center (DC)</strong> and <strong class="text-white">Disaster Recovery Center (DRC)</strong> environments. Skilled in translating technical designs into stable, high-performing operational systems, ensuring data security, seamless hardware integration, and continuous business operations for cross-industry clients.
+          </p>
+        </div>
+
+        <!-- Services Grid (What I'm Doing) -->
+        <div class="space-y-4 pt-4 border-t border-neutral-800/80">
+          <h3 class="text-lg sm:text-xl font-bold text-white text-center">What I'm Doing</h3>
+          
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
+            
+            <div class="p-5 sm:p-6 rounded-2xl border border-neutral-800 bg-[#252526] hover:border-amber-500/40 transition shadow-lg flex flex-col items-center text-center group">
+              <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-2xl text-amber-400 mb-3 sm:mb-4 group-hover:scale-110 transition">
+                <ion-icon name="server-outline"></ion-icon>
+              </div>
+              <h4 class="font-bold text-sm sm:text-base text-white mb-1.5 sm:mb-2">Enterprise Storage Systems</h4>
+              <p class="text-xs sm:text-sm text-neutral-400 leading-relaxed">Deployment & administration of NetApp ONTAP (AFF) for high-performance block storage and NetApp StorageGRID for Rubrik archival & object storage.</p>
+            </div>
+
+            <div class="p-5 sm:p-6 rounded-2xl border border-neutral-800 bg-[#252526] hover:border-amber-500/40 transition shadow-lg flex flex-col items-center text-center group">
+              <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-2xl text-amber-400 mb-3 sm:mb-4 group-hover:scale-110 transition">
+                <ion-icon name="shield-checkmark-outline"></ion-icon>
+              </div>
+              <h4 class="font-bold text-sm sm:text-base text-white mb-1.5 sm:mb-2">Data Backup & Cyber Resilience</h4>
+              <p class="text-xs sm:text-sm text-neutral-400 leading-relaxed">End-to-end data protection with Rubrik Security Cloud, Polaris, and R-Series for mission-critical Oracle ERP, SAP, SQL databases, and VMs.</p>
+            </div>
+
+            <div class="p-5 sm:p-6 rounded-2xl border border-neutral-800 bg-[#252526] hover:border-amber-500/40 transition shadow-lg flex flex-col items-center text-center group">
+              <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-2xl text-amber-400 mb-3 sm:mb-4 group-hover:scale-110 transition">
+                <ion-icon name="hardware-chip-outline"></ion-icon>
+              </div>
+              <h4 class="font-bold text-sm sm:text-base text-white mb-1.5 sm:mb-2">Data Center & Server Hardware</h4>
+              <p class="text-xs sm:text-sm text-neutral-400 leading-relaxed">Implementation, rack mounting, cabling, configuration, and physical relocation of enterprise HPE ProLiant (DL360/DL380 Gen10) and Lenovo servers.</p>
+            </div>
+
+            <div class="p-5 sm:p-6 rounded-2xl border border-neutral-800 bg-[#252526] hover:border-amber-500/40 transition shadow-lg flex flex-col items-center text-center group">
+              <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-2xl text-amber-400 mb-3 sm:mb-4 group-hover:scale-110 transition">
+                <ion-icon name="sync-outline"></ion-icon>
+              </div>
+              <h4 class="font-bold text-sm sm:text-base text-white mb-1.5 sm:mb-2">Disaster Recovery (DC/DRC) & Virtualization</h4>
+              <p class="text-xs sm:text-sm text-neutral-400 leading-relaxed">DC/DRC replication environments, VMware vSphere/ESXi virtualization, Linux OS administration, and Python automation scripting.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Key Platforms & Technologies -->
+        <div class="space-y-3 sm:space-y-4 pt-4 border-t border-neutral-800/80 text-center">
+          <h3 class="text-lg sm:text-xl font-bold text-white">Key Platforms & Technologies</h3>
+          <div class="flex flex-wrap justify-center items-center gap-2 sm:gap-2.5">
+            <span class="px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl bg-neutral-800/70 border border-neutral-700 text-xs font-semibold text-neutral-200">Rubrik Security Cloud</span>
+            <span class="px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl bg-neutral-800/70 border border-neutral-700 text-xs font-semibold text-neutral-200">NetApp ONTAP & StorageGRID</span>
+            <span class="px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl bg-neutral-800/70 border border-neutral-700 text-xs font-semibold text-neutral-200">VMware vSphere & ESXi</span>
+            <span class="px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl bg-neutral-800/70 border border-neutral-700 text-xs font-semibold text-neutral-200">VMware Cloud Foundation (VCF)</span>
+            <span class="px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl bg-neutral-800/70 border border-neutral-700 text-xs font-semibold text-neutral-200">HPE & Lenovo Enterprise Servers</span>
+            <span class="px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl bg-neutral-800/70 border border-neutral-700 text-xs font-semibold text-neutral-200">Linux OS (RHEL/Ubuntu)</span>
+            <span class="px-3 py-1.5 sm:px-4 sm:py-2 rounded-xl bg-neutral-800/70 border border-neutral-700 text-xs font-semibold text-neutral-200">Python Automation</span>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ================= TAB: RESUME ================= -->
+      <section id="tab-resume" class="tab-pane hidden space-y-8">
+        
+        <!-- Work Experience -->
+        <div class="space-y-4">
+          <div class="text-center space-y-1">
+            <h3 class="text-xl sm:text-2xl font-bold text-white flex items-center justify-center gap-2">
+              <ion-icon name="briefcase-outline" class="text-amber-400"></ion-icon> Work Experience
+            </h3>
+            <div class="w-10 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mx-auto rounded-full"></div>
+          </div>
+
+          <div class="space-y-4 max-w-3xl mx-auto">
+            
+            <div class="p-5 sm:p-6 rounded-2xl border border-neutral-800 bg-[#252526] space-y-2.5 sm:space-y-3 text-left shadow-lg">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 border-b border-neutral-700/50 pb-2.5">
+                <h4 class="font-bold text-sm sm:text-base md:text-lg text-white">System Engineer</h4>
+                <span class="text-[11px] sm:text-xs font-semibold text-amber-400 bg-amber-500/10 px-2.5 py-1 rounded-full border border-amber-500/20 w-fit">2022 — Present</span>
+              </div>
+              <ul class="text-xs sm:text-sm text-neutral-300 space-y-2 list-disc list-inside leading-relaxed">
+                <li>Deployed NetApp AFF for high-performance block storage and NetApp StorageGRID for Rubrik archival, delivering robust SAP storage solutions across DC and DRC environments.</li>
+                <li>Executed initial baseline implementation of 168 Lenovo servers at a legacy facility, leading physical relocation, hardware reconfiguration, and network integration to a new Data Center.</li>
+                <li>Successfully implemented Rubrik Security Cloud following PoC, operationalizing Data Threat Analytics and Data Security Posture.</li>
+                <li>Implemented Rubrik data protection solutions to securely back up mission-critical Oracle ERP databases.</li>
+                <li>Expanded local backup infrastructure capacity for 40 HPE DL380 Gen10 Plus servers utilizing the Rubrik Platform.</li>
+                <li>Executed end-to-end backup integration for large-scale SAP environments using Rubrik appliances and NetApp StorageGRID.</li>
+                <li>Handled storage capacity upgrades across 16 NetApp StorageGRID SG5760 devices, improving data availability and scalability.</li>
+              </ul>
+            </div>
+
+            <div class="p-5 sm:p-6 rounded-2xl border border-neutral-800 bg-[#252526] space-y-2.5 sm:space-y-3 text-left shadow-lg">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 border-b border-neutral-700/50 pb-2.5">
+                <h4 class="font-bold text-sm sm:text-base md:text-lg text-white">Technical Support Operation</h4>
+                <span class="text-[11px] sm:text-xs font-semibold text-amber-400 bg-amber-500/10 px-2.5 py-1 rounded-full border border-amber-500/20 w-fit">2021 — 2022</span>
+              </div>
+              <ul class="text-xs sm:text-sm text-neutral-300 space-y-2 list-disc list-inside leading-relaxed">
+                <li>Administered daily Rubrik backup operations and monitored system health to guarantee SLA compliance for enterprise clients.</li>
+                <li>Provided root-cause analysis and troubleshooting for backup failures, successfully restoring VMs, Oracle/SQL databases, and file systems.</li>
+                <li>Performed Data Center hardware installations, including rack mounting, cabling, and configuring HPE-DL360 Gen10 servers & network switches.</li>
+                <li>Integrated on-premise hardware and VMware vSphere/ESXi environments into the central Rubrik backup ecosystem.</li>
+              </ul>
+            </div>
+
+            <div class="p-5 sm:p-6 rounded-2xl border border-neutral-800 bg-[#252526] space-y-2.5 sm:space-y-3 text-left shadow-lg">
+              <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1.5 border-b border-neutral-700/50 pb-2.5">
+                <h4 class="font-bold text-sm sm:text-base md:text-lg text-white">Freelance Technical Engineer</h4>
+                <span class="text-[11px] sm:text-xs font-semibold text-amber-400 bg-amber-500/10 px-2.5 py-1 rounded-full border border-amber-500/20 w-fit">2022 — 2023</span>
+              </div>
+              <ul class="text-xs sm:text-sm text-neutral-300 space-y-2 list-disc list-inside leading-relaxed">
+                <li>Built automated queue ticketing and boom-gate access system using Python integrating QR code scanners, thermal printers, and beacons.</li>
+                <li>Performed routine hardware maintenance and rapid code troubleshooting to minimize system downtime for commercial and healthcare facilities.</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Education & Certifications Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6 pt-4 border-t border-neutral-800/80">
+          
+          <!-- Education -->
+          <div class="space-y-3 sm:space-y-4">
+            <div class="text-center space-y-1">
+              <h3 class="text-lg sm:text-xl font-bold text-white flex items-center justify-center gap-2">
+                <ion-icon name="school-outline" class="text-amber-400"></ion-icon> Education
+              </h3>
+            </div>
+            
+            <div class="p-5 sm:p-6 rounded-2xl border border-neutral-800 bg-[#252526] space-y-3 sm:space-y-4 shadow-lg text-center">
+              <div>
+                <span class="text-xs font-semibold text-amber-400">Gunadarma University | Depok, Indonesia</span>
+                <h4 class="font-bold text-sm sm:text-base text-white mt-0.5">Bachelor of Computer System</h4>
+                <p class="text-xs text-neutral-300 mt-1">GPA: <strong class="text-amber-400">3.60</strong> / 4.00</p>
+              </div>
+
+              <div class="border-t border-neutral-700/50 pt-3">
+                <span class="text-xs font-semibold text-amber-400">Gunadarma University | Depok, Indonesia</span>
+                <h4 class="font-bold text-sm sm:text-base text-white mt-0.5">Diploma of Computer Engineering</h4>
+                <p class="text-xs text-neutral-300 mt-1">GPA: <strong class="text-amber-400">3.56</strong> / 4.00</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Licenses & Certifications -->
+          <div class="space-y-3 sm:space-y-4">
+            <div class="text-center space-y-1">
+              <h3 class="text-lg sm:text-xl font-bold text-white flex items-center justify-center gap-2">
+                <ion-icon name="ribbon-outline" class="text-amber-400"></ion-icon> Licenses & Certifications
+              </h3>
+            </div>
+
+            <div class="p-5 sm:p-6 rounded-2xl border border-neutral-800 bg-[#252526] text-xs text-neutral-300 space-y-2 sm:space-y-2.5 shadow-lg">
+              
+              <!-- Featured VCP Certification -->
+              <div class="p-3 rounded-xl bg-amber-500/10 border border-amber-500/30 text-amber-300 text-center">
+                <div class="font-bold text-xs sm:text-sm text-amber-400 flex items-center justify-center gap-1.5">
+                  <ion-icon name="flash-outline"></ion-icon> VMware Certified Professional (VCP)
+                </div>
+                <div class="text-xs text-white font-semibold mt-0.5">VMware Cloud Foundation Administrator (Broadcom)</div>
+                <div class="text-[10px] sm:text-[11px] text-neutral-400 mt-0.5">Issued Aug 2026 · Expires Aug 2029 • VMware vSphere, VCF</div>
+              </div>
+
+              <div class="p-2 sm:p-2.5 rounded-lg bg-neutral-800/60 border border-neutral-700/50 flex justify-between items-center">
+                <span class="font-semibold text-white">RCDP - Rubrik Cloud Data Protection</span>
+                <span class="text-amber-400 text-[10px] sm:text-[11px]">Dec 2025</span>
+              </div>
+
+              <div class="p-2 sm:p-2.5 rounded-lg bg-neutral-800/60 border border-neutral-700/50 flex justify-between items-center">
+                <span class="font-semibold text-white">HCIP - Huawei ICT Professional Storage</span>
+                <span class="text-amber-400 text-[10px] sm:text-[11px]">Jul 2025</span>
+              </div>
+
+              <div class="p-2 sm:p-2.5 rounded-lg bg-neutral-800/60 border border-neutral-700/50 flex justify-between items-center">
+                <span class="font-semibold text-white">NetApp ONTAP Data Administrator & Installation</span>
+                <span class="text-amber-400 text-[10px] sm:text-[11px]">Apr 2025</span>
+              </div>
+
+              <div class="p-2 sm:p-2.5 rounded-lg bg-neutral-800/60 border border-neutral-700/50 flex justify-between items-center">
+                <span class="font-semibold text-white">RCCS & RCRS - Rubrik Cloud & Cyber Resiliency</span>
+                <span class="text-amber-400 text-[10px] sm:text-[11px]">Apr 2025</span>
+              </div>
+
+              <div class="p-2 sm:p-2.5 rounded-lg bg-neutral-800/60 border border-neutral-700/50 flex justify-between items-center">
+                <span class="font-semibold text-white">RCSA, RCE & RRE - Rubrik Ransomware Recovery</span>
+                <span class="text-amber-400 text-[10px] sm:text-[11px]">2022</span>
+              </div>
+
+              <div class="p-2 sm:p-2.5 rounded-lg bg-neutral-800/60 border border-neutral-700/50 flex justify-between items-center">
+                <span class="font-semibold text-white">Fortinet - NSE 1, NSE 2, NSE 3 Associate</span>
+                <span class="text-amber-400 text-[10px] sm:text-[11px]">2022</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Skills Progress Bars -->
+        <div class="space-y-4 pt-4 border-t border-neutral-800/80">
+          <h3 class="text-lg sm:text-xl font-bold text-white text-center">Technical Competencies</h3>
+          <div class="space-y-3.5 sm:space-y-4 max-w-2xl mx-auto">
+            
+            <div>
+              <div class="flex justify-between text-xs font-semibold mb-1.5">
+                <span class="text-neutral-200">Data Backup & Recovery (Rubrik Security Cloud, Polaris, R-Series)</span>
+                <span class="text-amber-400 font-mono">95%</span>
+              </div>
+              <div class="w-full bg-neutral-800 h-2.5 rounded-full overflow-hidden">
+                <div class="bg-gradient-to-r from-amber-500 to-amber-400 h-full rounded-full" style="width: 95%"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs font-semibold mb-1.5">
+                <span class="text-neutral-200">Enterprise Storage Systems (NetApp ONTAP, StorageGRID, AFF)</span>
+                <span class="text-amber-400 font-mono">92%</span>
+              </div>
+              <div class="w-full bg-neutral-800 h-2.5 rounded-full overflow-hidden">
+                <div class="bg-gradient-to-r from-amber-500 to-amber-400 h-full rounded-full" style="width: 92%"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs font-semibold mb-1.5">
+                <span class="text-neutral-200">Server Hardware Integration (HPE ProLiant, Lenovo, DC Rack Mounting)</span>
+                <span class="text-amber-400 font-mono">90%</span>
+              </div>
+              <div class="w-full bg-neutral-800 h-2.5 rounded-full overflow-hidden">
+                <div class="bg-gradient-to-r from-amber-500 to-amber-400 h-full rounded-full" style="width: 90%"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs font-semibold mb-1.5">
+                <span class="text-neutral-200">Disaster Recovery (DC/DRC) & Storage Archival</span>
+                <span class="text-amber-400 font-mono">90%</span>
+              </div>
+              <div class="w-full bg-neutral-800 h-2.5 rounded-full overflow-hidden">
+                <div class="bg-gradient-to-r from-amber-500 to-amber-400 h-full rounded-full" style="width: 90%"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs font-semibold mb-1.5">
+                <span class="text-neutral-200">Virtualization & OS (VMware vSphere/ESXi, VCF Administrator, Linux OS)</span>
+                <span class="text-amber-400 font-mono">90%</span>
+              </div>
+              <div class="w-full bg-neutral-800 h-2.5 rounded-full overflow-hidden">
+                <div class="bg-gradient-to-r from-amber-500 to-amber-400 h-full rounded-full" style="width: 90%"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs font-semibold mb-1.5">
+                <span class="text-neutral-200">Automation Scripting (Python, System Integration & Hardware Telemetry)</span>
+                <span class="text-amber-400 font-mono">82%</span>
+              </div>
+              <div class="w-full bg-neutral-800 h-2.5 rounded-full overflow-hidden">
+                <div class="bg-gradient-to-r from-amber-500 to-amber-400 h-full rounded-full" style="width: 82%"></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+      <!-- ================= TAB: PORTFOLIO ================= -->
+      <section id="tab-portfolio" class="tab-pane hidden space-y-8">
+        
+        <div class="text-center space-y-1">
+          <h2 class="text-xl sm:text-2xl font-bold text-white flex items-center justify-center gap-2">
+            <ion-icon name="layers-outline" class="text-amber-400"></ion-icon> Enterprise Projects & Deployments
+          </h2>
+          <div class="w-12 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mx-auto rounded-full"></div>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="flex flex-wrap justify-center gap-1.5 sm:gap-2 text-xs font-medium">
+          <button onclick="filterProjects('all')" class="proj-filter active px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-xl bg-amber-500 text-neutral-950 font-bold transition shadow-sm">All</button>
+          <button onclick="filterProjects('storage')" class="proj-filter px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-xl bg-neutral-800 hover:bg-amber-500/20 text-neutral-200 transition">Enterprise Storage</button>
+          <button onclick="filterProjects('backup')" class="proj-filter px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-xl bg-neutral-800 hover:bg-amber-500/20 text-neutral-200 transition">Backup & Cyber Recovery</button>
+          <button onclick="filterProjects('dc')" class="proj-filter px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-xl bg-neutral-800 hover:bg-amber-500/20 text-neutral-200 transition">Data Center Infrastructure</button>
+          <button onclick="filterProjects('integration')" class="proj-filter px-3.5 py-1.5 sm:px-4 sm:py-2 rounded-xl bg-neutral-800 hover:bg-amber-500/20 text-neutral-200 transition">System Integration & Python</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 text-center" id="project-cards">
+          
+          <div class="proj-card storage p-5 sm:p-6 rounded-2xl border border-neutral-800 bg-[#252526] hover:border-amber-500/50 transition flex flex-col justify-between items-center shadow-lg group">
+            <div class="space-y-2">
+              <span class="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-amber-400 bg-amber-500/10 px-2.5 py-1 rounded-full border border-amber-500/20">Enterprise Storage</span>
+              <h4 class="font-bold text-sm sm:text-base text-white group-hover:text-amber-400 transition">NetApp AFF & StorageGRID for SAP Storage</h4>
+              <p class="text-xs text-neutral-300 leading-relaxed">Deployed NetApp AFF block storage & StorageGRID for Rubrik archival across DC and DRC environments.</p>
+            </div>
+            <div class="mt-4 sm:mt-5 pt-3 border-t border-neutral-700/50 text-xs text-amber-400 font-mono w-full">
+              NetApp • StorageGRID • SAP
+            </div>
+          </div>
+
+          <div class="proj-card dc p-5 sm:p-6 rounded-2xl border border-neutral-800 bg-[#252526] hover:border-amber-500/50 transition flex flex-col justify-between items-center shadow-lg group">
+            <div class="space-y-2">
+              <span class="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-amber-400 bg-amber-500/10 px-2.5 py-1 rounded-full border border-amber-500/20">Data Center Infrastructure</span>
+              <h4 class="font-bold text-sm sm:text-base text-white group-hover:text-amber-400 transition">Data Center Relocation (168 Lenovo Servers)</h4>
+              <p class="text-xs text-neutral-300 leading-relaxed">Baseline implementation, physical relocation, hardware reconfiguration, and network integration to new DC.</p>
+            </div>
+            <div class="mt-4 sm:mt-5 pt-3 border-t border-neutral-700/50 text-xs text-amber-400 font-mono w-full">
+              Lenovo • DC Migration • Cabling
+            </div>
+          </div>
+
+          <div class="proj-card backup p-5 sm:p-6 rounded-2xl border border-neutral-800 bg-[#252526] hover:border-amber-500/50 transition flex flex-col justify-between items-center shadow-lg group">
+            <div class="space-y-2">
+              <span class="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-amber-400 bg-amber-500/10 px-2.5 py-1 rounded-full border border-amber-500/20">Backup & Cyber Recovery</span>
+              <h4 class="font-bold text-sm sm:text-base text-white group-hover:text-amber-400 transition">Rubrik Security Cloud & Ransomware Recovery</h4>
+              <p class="text-xs text-neutral-300 leading-relaxed">PoC implementation of Data Threat Analytics and Data Security Posture to enhance enterprise data resilience.</p>
+            </div>
+            <div class="mt-4 sm:mt-5 pt-3 border-t border-neutral-700/50 text-xs text-amber-400 font-mono w-full">
+              Rubrik • Threat Analytics • PoC
+            </div>
+          </div>
+
+          <div class="proj-card backup p-5 sm:p-6 rounded-2xl border border-neutral-800 bg-[#252526] hover:border-amber-500/50 transition flex flex-col justify-between items-center shadow-lg group">
+            <div class="space-y-2">
+              <span class="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-amber-400 bg-amber-500/10 px-2.5 py-1 rounded-full border border-amber-500/20">Backup & Cyber Recovery</span>
+              <h4 class="font-bold text-sm sm:text-base text-white group-hover:text-amber-400 transition">Oracle ERP Database Data Protection</h4>
+              <p class="text-xs text-neutral-300 leading-relaxed">Implemented Rubrik data protection solutions to securely back up mission-critical Oracle ERP databases.</p>
+            </div>
+            <div class="mt-4 sm:mt-5 pt-3 border-t border-neutral-700/50 text-xs text-amber-400 font-mono w-full">
+              Oracle ERP • Rubrik • Database
+            </div>
+          </div>
+
+          <div class="proj-card dc p-5 sm:p-6 rounded-2xl border border-neutral-800 bg-[#252526] hover:border-amber-500/50 transition flex flex-col justify-between items-center shadow-lg group">
+            <div class="space-y-2">
+              <span class="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-amber-400 bg-amber-500/10 px-2.5 py-1 rounded-full border border-amber-500/20">Data Center Infrastructure</span>
+              <h4 class="font-bold text-sm sm:text-base text-white group-hover:text-amber-400 transition">40 HPE DL380 Gen10 Plus Backup Expansion</h4>
+              <p class="text-xs text-neutral-300 leading-relaxed">Expanded local backup infrastructure capacity for 40 HPE servers utilizing the Rubrik Platform.</p>
+            </div>
+            <div class="mt-4 sm:mt-5 pt-3 border-t border-neutral-700/50 text-xs text-amber-400 font-mono w-full">
+              HPE DL380 • Gen10 Plus • Rubrik
+            </div>
+          </div>
+
+          <div class="proj-card storage p-5 sm:p-6 rounded-2xl border border-neutral-800 bg-[#252526] hover:border-amber-500/50 transition flex flex-col justify-between items-center shadow-lg group">
+            <div class="space-y-2">
+              <span class="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-amber-400 bg-amber-500/10 px-2.5 py-1 rounded-full border border-amber-500/20">Enterprise Storage</span>
+              <h4 class="font-bold text-sm sm:text-base text-white group-hover:text-amber-400 transition">StorageGRID SG5760 Upgrade (16 Devices)</h4>
+              <p class="text-xs text-neutral-300 leading-relaxed">Handled capacity upgrades across 16 NetApp SG5760 appliances for data availability and scalability.</p>
+            </div>
+            <div class="mt-4 sm:mt-5 pt-3 border-t border-neutral-700/50 text-xs text-amber-400 font-mono w-full">
+              NetApp SG5760 • Object Storage
+            </div>
+          </div>
+
+          <div class="proj-card dc p-5 sm:p-6 rounded-2xl border border-neutral-800 bg-[#252526] hover:border-amber-500/50 transition flex flex-col justify-between items-center shadow-lg group">
+            <div class="space-y-2">
+              <span class="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-amber-400 bg-amber-500/10 px-2.5 py-1 rounded-full border border-amber-500/20">Data Center Infrastructure</span>
+              <h4 class="font-bold text-sm sm:text-base text-white group-hover:text-amber-400 transition">VMware vSphere/ESXi Backup Integration</h4>
+              <p class="text-xs text-neutral-300 leading-relaxed">Integrated on-premise hardware & VMware clusters into central Rubrik backup ecosystem.</p>
+            </div>
+            <div class="mt-4 sm:mt-5 pt-3 border-t border-neutral-700/50 text-xs text-amber-400 font-mono w-full">
+              VMware • ESXi • vSphere
+            </div>
+          </div>
+
+          <div class="proj-card integration p-5 sm:p-6 rounded-2xl border border-neutral-800 bg-[#252526] hover:border-amber-500/50 transition flex flex-col justify-between items-center shadow-lg group">
+            <div class="space-y-2">
+              <span class="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-amber-400 bg-amber-500/10 px-2.5 py-1 rounded-full border border-amber-500/20">System Integration & Python</span>
+              <h4 class="font-bold text-sm sm:text-base text-white group-hover:text-amber-400 transition">Automated Queue & Boom-Gate System</h4>
+              <p class="text-xs text-neutral-300 leading-relaxed">Python automated ticketing & gate access integrating QR scanners, thermal printers, and beacons.</p>
+            </div>
+            <div class="mt-4 sm:mt-5 pt-3 border-t border-neutral-700/50 text-xs text-amber-400 font-mono w-full">
+              Python • QR Code • IoT
+            </div>
+          </div>
+
+          <div class="proj-card backup p-5 sm:p-6 rounded-2xl border border-neutral-800 bg-[#252526] hover:border-amber-500/50 transition flex flex-col justify-between items-center shadow-lg group">
+            <div class="space-y-2">
+              <span class="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-amber-400 bg-amber-500/10 px-2.5 py-1 rounded-full border border-amber-500/20">Backup & Cyber Recovery</span>
+              <h4 class="font-bold text-sm sm:text-base text-white group-hover:text-amber-400 transition">DC & DRC Long-Term Archival Pipeline</h4>
+              <p class="text-xs text-neutral-300 leading-relaxed">End-to-end backup integration for large-scale SAP environments using NetApp StorageGRID.</p>
+            </div>
+            <div class="mt-4 sm:mt-5 pt-3 border-t border-neutral-700/50 text-xs text-amber-400 font-mono w-full">
+              DC/DRC • NetApp • Rubrik
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <!-- ================= TAB: CONTACT ================= -->
+      <section id="tab-contact" class="tab-pane hidden space-y-8">
+        
+        <div class="text-center space-y-1">
+          <h2 class="text-xl sm:text-2xl font-bold text-white flex items-center justify-center gap-2">
+            <ion-icon name="chatbubbles-outline" class="text-amber-400"></ion-icon> Get In Touch
+          </h2>
+          <div class="w-12 h-1 bg-gradient-to-r from-amber-400 to-amber-600 mx-auto rounded-full"></div>
+        </div>
+
+        <!-- Contact Cards Grid (Clean & Direct) -->
+        <div class="max-w-2xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 text-center">
+          
+          <div class="p-6 sm:p-8 rounded-2xl border border-neutral-800 bg-[#252526] space-y-3 shadow-lg hover:border-amber-500/40 transition">
+            <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-400 flex items-center justify-center mx-auto text-2xl border border-amber-500/20">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="text-xs text-neutral-400 uppercase font-semibold tracking-wider">Location</div>
+            <div class="font-bold text-white text-sm sm:text-base">Depok, West Java, Indonesia</div>
+          </div>
+
+          <div class="p-6 sm:p-8 rounded-2xl border border-neutral-800 bg-[#252526] space-y-3 shadow-lg hover:border-amber-500/40 transition group">
+            <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-400 flex items-center justify-center mx-auto text-2xl border border-amber-500/20 group-hover:scale-110 transition">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </div>
+            <div class="text-xs text-neutral-400 uppercase font-semibold tracking-wider">LinkedIn Profile</div>
+            <a href="https://linkedin.com/in/ardoyudha/" target="_blank" rel="noopener noreferrer" class="block font-bold text-amber-400 hover:text-amber-300 underline text-sm sm:text-base transition">
+              linkedin.com/in/ardoyudha/
+            </a>
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+
+  </main>
+
+  <footer class="text-center text-xs text-neutral-500 py-4">
+    <p>© 2026 Ardo Yudha. All rights reserved.</p>
+  </footer>
+
+  <!-- Tab and Filter Scripts -->
+  <script>
+    function switchTab(tabId) {
+      document.querySelectorAll('.tab-pane').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('active', 'border-amber-400', 'text-amber-400', 'font-semibold');
+        btn.classList.add('border-transparent', 'text-neutral-400');
+      });
+
+      const activePane = document.getElementById('tab-' + tabId);
+      const activeBtn = document.getElementById('tab-btn-' + tabId);
+
+      if (activePane) activePane.classList.remove('hidden');
+      if (activeBtn) {
+        activeBtn.classList.add('active', 'border-amber-400', 'text-amber-400', 'font-semibold');
+        activeBtn.classList.remove('border-transparent', 'text-neutral-400');
+      }
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function filterProjects(cat) {
+      document.querySelectorAll('.proj-filter').forEach(btn => {
+        btn.classList.remove('bg-amber-500', 'text-neutral-950', 'font-bold');
+        btn.classList.add('bg-neutral-800', 'text-neutral-200');
+      });
+      event.target.classList.add('bg-amber-500', 'text-neutral-950', 'font-bold');
+      event.target.classList.remove('bg-neutral-800', 'text-neutral-200');
+
+      document.querySelectorAll('.proj-card').forEach(card => {
+        if (cat === 'all' || card.classList.contains(cat)) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>

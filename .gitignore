@@ -1,0 +1,11 @@
+# SSH Keys & Secrets
+ardoyudha_github
+ardoyudha_github.pub
+*.pem
+*.key
+*.pub
+id_*
+
+# OS Files
+.DS_Store
+Thumbs.db

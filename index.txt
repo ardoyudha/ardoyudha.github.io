@@ -1,0 +1,49 @@
+Ardo Yudha - System Engineer & IT Infrastructure Specialist
+
+# Identity
+Ardo Yudha
+System Engineer | IT Infrastructure & Storage Specialist
+Location: Depok, West Java, Indonesia
+LinkedIn: https://linkedin.com/in/ardoyudha/
+
+# About Me
+Dedicated System Engineer with over 5 years of experience in implementing and maintaining enterprise-level IT infrastructure, specializing in Data Backup & Recovery, Server Hardware, and Enterprise Storage Solutions. Proven track record of managing large-scale enterprise deployments across Data Center (DC) and Disaster Recovery Center (DRC) environments. Skilled in translating technical designs into stable, high-performing operational systems, ensuring data security, seamless hardware integration, and continuous business operations for cross-industry clients.
+
+# Core Expertise
+- Enterprise Storage Systems (NetApp ONTAP AFF, StorageGRID)
+- Data Backup & Cyber Resilience (Rubrik Security Cloud, Polaris, R-Series)
+- Data Center & Server Hardware (HPE ProLiant, Lenovo Servers, DC Rack Mounting)
+- Disaster Recovery (DC/DRC) & Virtualization (VMware vSphere/ESXi, Linux OS, Python)
+
+# Work Experience
+- System Engineer (2022 — Present)
+  • Deployed NetApp AFF for high-performance block storage and NetApp StorageGRID for Rubrik archival, delivering robust SAP storage solutions across DC and DRC environments.
+  • Executed initial baseline implementation of 168 Lenovo servers at a legacy facility, leading physical relocation, hardware reconfiguration, and network integration to a new Data Center.
+  • Successfully implemented Rubrik Security Cloud following PoC, operationalizing Data Threat Analytics and Data Security Posture.
+  • Implemented Rubrik data protection solutions to securely back up mission-critical Oracle ERP databases.
+  • Expanded local backup infrastructure capacity for 40 HPE DL380 Gen10 Plus servers utilizing the Rubrik Platform.
+  • Executed end-to-end backup integration for large-scale SAP environments using Rubrik appliances and NetApp StorageGRID.
+  • Handled storage capacity upgrades across 16 NetApp StorageGRID SG5760 devices, improving data availability and scalability.
+
+- Technical Support Operation (2021 — 2022)
+  • Administered daily Rubrik backup operations and monitored system health to guarantee SLA compliance for enterprise clients.
+  • Provided root-cause analysis and troubleshooting for backup failures, successfully restoring VMs, Oracle/SQL databases, and file systems.
+  • Performed Data Center hardware installations, including rack mounting, cabling, and configuring HPE-DL360 Gen10 servers & network switches.
+  • Integrated on-premise hardware and VMware vSphere/ESXi environments into the central Rubrik backup ecosystem.
+
+- Freelance Technical Engineer (2022 — 2023)
+  • Built automated queue ticketing and boom-gate access system using Python integrating QR code scanners, thermal printers, and beacons.
+  • Performed routine hardware maintenance and rapid code troubleshooting to minimize system downtime for commercial and healthcare facilities.
+
+# Education
+- Gunadarma University | Bachelor of Computer System (GPA: 3.60)
+- Gunadarma University | Diploma of Computer Engineering (GPA: 3.56)
+
+# Licenses & Certifications
+- VMware Certified Professional (VCP) - VMware Cloud Foundation Administrator (Broadcom | Issued Aug 2026 · Expires Aug 2029)
+- RCDP - Rubrik Cloud Data Protection (Dec 2025)
+- HCIP - Huawei ICT Professional Storage (Jul 2025)
+- NetApp ONTAP Data Administrator & Installation (Apr 2025)
+- RCCS & RCRS - Rubrik Cloud & Cyber Resiliency (Apr 2025)
+- RCSA, RCE & RRE - Rubrik Ransomware Recovery (2022)
+- Fortinet - NSE 1, NSE 2, NSE 3 Associate (2022)
